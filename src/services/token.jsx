@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://die-outjie-muisic.vercel.app/api/",
+  baseURL: "https://django-hello-world-roan-iota.vercel.app/api/",
 });
 
 export const getAccessToken = () => localStorage.getItem("accessToken");

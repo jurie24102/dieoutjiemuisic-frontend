@@ -20,7 +20,7 @@ const EditSong = ({ open, onClose, slug }) => {
       const fetchSong = async () => {
         try {
           const response = await axios.get(
-            `https://die-outjie-muisic.vercel.app/api/songs/songs/${slug}/`
+            `https://django-hello-world-roan-iota.vercel.app/api/songs/songs/${slug}/`
           );
           setSong(response.data);
           setUpdatedName(response.data.name);
@@ -38,7 +38,7 @@ const EditSong = ({ open, onClose, slug }) => {
 
   const handleUpdate = async () => {
     try {
-      await axios.patch(`https://die-outjie-muisic.vercel.app/api/songs/songs/${slug}/`, {
+      await axios.patch(`https://django-hello-world-roan-iota.vercel.app/api/songs/songs/${slug}/`, {
         name: updatedName,
       });
       // Close the dialog

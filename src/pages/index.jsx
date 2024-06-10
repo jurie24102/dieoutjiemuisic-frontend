@@ -41,7 +41,7 @@ const IndexPage = () => {
     const fetchSongs = async () => {
       try {
         const response = await axios.get(
-          `https://die-outjie-muisic.vercel.appsongs/`
+          `https://django-hello-world-roan-iota.vercel.appsongs/`
         );
         setSongs(response.data);
       } catch (error) {
@@ -76,7 +76,7 @@ const IndexPage = () => {
     const fetchSongs = async () => {
       try {
         const response = await axios.get(
-          `https://die-outjie-muisic.vercel.app/api/songs/songs/?timestamp=${lastUpdated}`
+          `https://django-hello-world-roan-iota.vercel.app/api/songs/songs/?timestamp=${lastUpdated}`
         );
         setSongs(response.data);
       } catch (error) {
@@ -197,7 +197,7 @@ const IndexPage = () => {
   const confirmDownload = async () => {
     try {
       const response = await axios.get(
-        `https://die-outjie-muisic.vercel.app/api/songs/songs/${selectedSong.slug}/download/`,
+        `https://django-hello-world-roan-iota.vercel.app/api/songs/songs/${selectedSong.slug}/download/`,
         {
           responseType: "blob",
         }
