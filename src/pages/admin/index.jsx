@@ -49,7 +49,7 @@ const SongList = () => {
         if (!token) {
           throw new Error("Access token not found");
         }
-        const response = await axios.get(`https://django-hello-world-roan-iota.vercel.app/api/user/`, {
+        const response = await axios.get(`https://die-outjie-muisic.vercel.app, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -76,7 +76,7 @@ const SongList = () => {
       try {
         setLoadingSongs(true);
         const response = await axios.get(
-          "https://django-hello-world-roan-iota.vercel.app/api/songs/songs/"
+          "https://die-outjie-muisic.vercel.app/api/songs/songs/"
         );
         setSongs(response.data);
       } catch (error) {
@@ -100,7 +100,7 @@ const SongList = () => {
       } else {
         try {
           const response = await axios.get(
-            `https://django-hello-world-roan-iota.vercel.app/api/songs/songs/${slug}/`
+            `https://die-outjie-muisic.vercel.app/api/songs/songs/${slug}/`
           );
           const songUrl = response.data.song;
           audioRef.current.src = songUrl;

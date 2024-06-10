@@ -17,7 +17,7 @@ const DeleteConfirmation = ({ open, onClose, slug }) => {
   const handleDelete = async () => {
     try {
       console.log("Deleting song with slug:", slug); // Log the slug
-      await axios.delete(`https://django-hello-world-roan-iota.vercel.app/api/songs/songs/${slug}`);
+      await axios.delete(`https://die-outjie-muisic.vercel.app/api/songs/songs/${slug}`);
       handleClose();
     } catch (error) {
       console.error("Error deleting song:", error);

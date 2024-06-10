@@ -38,7 +38,7 @@ const withAuth = (WrappedComponent) => {
         if (staffRoutes.includes(pathname)) {
           try {
             const response = await axios.get(
-              `https://django-hello-world-roan-iota.vercel.app/api/user/`,
+              `https://die-outjie-muisic.vercel.app/api/user/`,
               {
                 headers: {
                   Authorization: `Bearer ${accessToken}`,

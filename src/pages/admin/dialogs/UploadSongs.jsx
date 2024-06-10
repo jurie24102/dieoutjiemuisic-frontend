@@ -46,7 +46,7 @@ const UploadSong = ({ open, onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://django-hello-world-roan-iota.vercel.app/api/songs/songs/",
+        "https://die-outjie-muisic.vercel.app/api/songs/songs/",
         data,
         {
           headers: {

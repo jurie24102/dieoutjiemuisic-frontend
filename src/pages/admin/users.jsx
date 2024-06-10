@@ -32,7 +32,7 @@ function Users() {
           throw new Error("Access token not found");
         }
         const response = await axios.get(
-          `https://django-hello-world-roan-iota.vercel.appworld-roan-iota.vercel.app/api/user-count/`,
+          `https://die-outjie-muisic.vercel.appworld-roan-iota.vercel.app/api/user-count/`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ function Users() {
         if (!token) {
           throw new Error("Access token not found");
         }
-        const response = await axios.get(`https://django-hello-world-roan-iota.vercel.app/api/user/`, {
+        const response = await axios.get(`https://die-outjie-muisic.vercel.app/api/user/`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -87,7 +87,7 @@ function Users() {
         if (!token) {
           throw new Error("Access token not found");
         }
-        const response = await axios.get(`https://django-hello-world-roan-iota.vercel.app/api/users/`, {
+        const response = await axios.get(`https://die-outjie-muisic.vercel.app/api/users/`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
