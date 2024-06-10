@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #ffffff; /* Use white background */
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; /* Adjust shadow colors */
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.div {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.inputGroup i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888; /* Use gray color */
+}
+
+.inputGroup input[type="text"],
+.inputGroup input[type="email"],
+.inputGroup input[type="password"] {
+  width: 250px; /* Increase width */
+  padding: 17px; /* Increase padding */
+  padding-left: 40px;
+  border: none;
+  border-radius: 15px; /* Increase border-radius */
+  box-shadow: inset 2px 2px 5px #bebebe, inset -5px -5px 10px #ffffff;
+  transition: box-shadow 0.3s;
+}
+
+.inputGroup input[type="text"]:focus,
+.inputGroup input[type="email"]:focus,
+.inputGroup input[type="password"]:focus {
+  outline: none;
+  box-shadow: inset 3px 3px 6px orange, inset -5px -5px 10px #ffffff; /* Use orange shadow on focus */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+.submitButton {
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000000; /* Use black background */
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; /* Adjust shadow colors */
+  cursor: pointer;
+  color: #ffffff; /* Use white text color */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.title h2 {
+  font-size: 24px;
+  color: #000000; /* Use black text color */
+}
+
+.additionalInfo {
+  margin-top: 20px; /* Add margin for spacing */
+  text-align: center;
+  font-size: 14px;
+  color: #000000; /* Use black text color */
+}
