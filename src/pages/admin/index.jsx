@@ -49,7 +49,7 @@ const SongList = () => {
         if (!token) {
           throw new Error("Access token not found");
         }
-        const response = await axios.get(`https://die-outjie-muisic.vercel.app, {
+        const response = await axios.get(`https://die-outjie-muisic.vercel.app/api/user/`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
